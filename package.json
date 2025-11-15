@@ -1,0 +1,11 @@
+{
+  "name": "four_card_feature_section",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
