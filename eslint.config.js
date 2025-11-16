@@ -2,6 +2,8 @@ import markdown from "@eslint/markdown";
 import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
 import prettier from "eslint-plugin-prettier/recommended";
+import js from "@eslint/js";
+import ts from "typescript-eslint";
 
 export default defineConfig([
   { ignores: ["**/*.js", "**/*.cjs", "**/*.mjs", "requirements/*", "dist/*"] },
@@ -16,6 +18,11 @@ export default defineConfig([
     plugins: { css },
     language: "css/css",
     extends: ["css/recommended"],
+  },
+  {
+    files: ["**/*.ts"],
+    plugins: { js, ts },
+    extends: ["js/recommended", "ts/strict"],
   },
   prettier,
 ]);
