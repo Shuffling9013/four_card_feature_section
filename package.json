@@ -5,7 +5,7 @@
   "scripts": {
     "lnt": "eslint --fix",
     "fmt": "prettier . -w",
-    "serve": "bun src/dev_server.ts"
+    "serve": "bun scripts/dev_server.ts"
   },
   "devDependencies": {
     "@eslint/css": "^0.14.1",
