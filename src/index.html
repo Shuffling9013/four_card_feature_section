@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Four card feature section</title>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="../public/images/favicon-32x32.png"
     />
-    <title>Four card feature section</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="./card-component.ts"></script>
   </head>
   <body>
     <header>
@@ -24,31 +26,34 @@
       </p>
     </header>
     <main>
-      <wc-card
+      <card-component
         title="Supervisor"
-        description="Monitors activity to identify project roadblocks"
+        desc="Monitors activity to identify project roadblocks"
+        theme="cyan"
       >
         <img src="../public/images/icon-supervisor.svg" alt="icon" />
-      </wc-card>
-      <wc-card
+      </card-component>
+      <card-component
         title="Team Builder"
-        description="Scans our talent network to create the optimal team for your project"
+        desc="Scans our talent network to create the optimal team for your project"
+        theme="red"
       >
         <img src="../public/images/icon-team-builder.svg" alt="icon" />
-      </wc-card>
-      <wc-card
+      </card-component>
+      <card-component
         title="Karma"
-        description="Regularly evaluates our talent to ensure quality"
+        desc="Regularly evaluates our talent to ensure quality"
+        theme="orange"
       >
         <img src="../public/images/icon-karma.svg" alt="icon" />
-      </wc-card>
-      <wc-card
+      </card-component>
+      <card-component
         title="Calculator"
-        description="Uses data from past projects to provide better delivery estimates"
+        desc="Uses data from past projects to provide better delivery estimates"
+        theme="blue"
       >
         <img src="../public/images/icon-calculator.svg" alt="icon" />
-      </wc-card>
+      </card-component>
     </main>
-    <script type="module" src="./card.ts"></script>
   </body>
 </html>

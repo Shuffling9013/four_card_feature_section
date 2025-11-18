@@ -21,6 +21,7 @@ const screenshot = async (name: DeviceName) => {
   await page.goto("http://0.0.0.0:3000");
   await page.screenshot({
     path: `docs/${String(name).replaceAll(" ", "_")}.jpg`,
+    fullPage: true,
   });
 };
 
